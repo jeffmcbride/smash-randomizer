@@ -1,0 +1,24 @@
+img{
+	width: 50px;
+	border-radius:50%;
+	border:#CCCCCC thin solid;
+}
+
+img:hover{
+	opacity: 0.5;
+}
+
+.canvas{
+	    background-color: black;
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+		width:50%
+}
+
+table{
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+		width:50%
+}
