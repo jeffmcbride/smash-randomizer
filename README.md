@@ -1,3 +1,3 @@
 # smash-randomizer
 
-smash-randomizer will allow you to choose any characters from Smash Ultimate at random. Or even create a sub-set of characters from which you want to choose at random.
+Use this program to choose a random player from Smash Ultimate in Quickplay, or create a subset of players who you want to randomize. Click on a player to remove it from eligibility, and click on it again to make it eligible again. Press Randomize and Remove to remove the current player from eligibility.
