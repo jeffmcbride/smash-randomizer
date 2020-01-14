@@ -1,4 +1,5 @@
 var characters = 79
+var active = characters;
 var characterList = {
 	"1":"Mario",
 	"2":"Donkey Kong",
@@ -80,7 +81,7 @@ var characterList = {
 	"78":"Mii Swordfighter",
 	"79":"Mii Gunner"
 }
-var index = false
+var index = -1
 
 function createBoard() {
     var images = []
@@ -103,13 +104,15 @@ function toggleOpacity() {
         $('#' + i).click(function() {
             if ($(this).css("opacity") == 0.25) {
                 $(this).css({
-                    'opacity': '1'
+                    'opacity': '1'			
                 })
+				active += 1;
             }
             else {
                 $(this).css({
-                    'opacity': '0.25'
+                    'opacity': '0.25'			
                 })
+				active -= 1
             }
         });
     }
@@ -121,12 +124,22 @@ function chooseRandom(remove = false) {
             'border': 'white thick solid'
         })
     }
+	console.log(remove)
+	console.log(index)
     bool = false
-    if (remove == true && index != false) {
+    if (remove == true && index != -1) {
         $('#' + index).css({
             'opacity': '0.25'
         })
+		active -= 1;
     }
+	
+	if (active == 0){
+		alert("No more characters")
+		index = -1;
+		$('#char').text("Character: No more characters")
+		return;
+	}
     // Get random value from 1-80
     while (bool == false) {
         index = Math.floor(Math.random() * characters)
@@ -143,6 +156,7 @@ function chooseRandom(remove = false) {
 }
 // Chosen character = characterList[index]	
 $(document).ready(function() {
+	
     var table = createBoard();
     $("#canvas").append(table);
     toggleOpacity();
