@@ -1,0 +1,52 @@
+img{
+     width: 50px;
+     height: 50px;
+     border-radius:50%;
+}
+ img:hover{
+     opacity: 0.5;
+}
+
+td{
+	  border-radius:50%;
+	  border: white thick solid;
+}
+
+#canvas{
+     display: block;
+     margin-left:auto;
+     margin-right:auto;
+	 text-align:center;
+     width:50% 
+}
+ 
+ table{
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+/* On mouse-over */
+button:hover {
+    background: inherit;
+	
+}
+
+button{
+	background: #eee;
+	padding: 15px 24px;
+	display:block;
+	vertical-align:bottom;
+	text-align:center;
+	margin: 0 auto;
+	margin-bottom:5px;
+}
+
+
+.group{
+	text-align:center;
+}
+
+
+#desc{
+	font-size: 12px;
+}
