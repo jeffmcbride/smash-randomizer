@@ -1,4 +1,4 @@
-var characters = 79
+var characters = 81
 var active = characters;
 var characterList = {
 	"1":"Mario",
@@ -77,9 +77,11 @@ var characterList = {
 	"74":"Hero",
 	"75":"Banjo & Kazooie",
 	"76":"Terry",
-	"77":"Mii Brawler",
-	"78":"Mii Swordfighter",
-	"79":"Mii Gunner"
+	"77":"Byleth",
+	"78":"Min Min",
+	"79":"Mii Brawler",
+	"80":"Mii Swordfighter",
+	"81":"Mii Gunner"
 }
 var index = -1
 
